@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>0-4 單字聽打測驗</title>
+<title>0-6 單字聽打測驗</title>
 <style>
 body { font-family: sans-serif; max-width: 600px; margin: auto; text-align: center; padding: 30px 15px; }
 #logo, #logo-game { width: 150px; max-width: 80%; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
@@ -33,7 +33,7 @@ if (password !== "1231") { alert("密碼錯誤，無法進入！"); window.locat
 
 <div id="game-area" class="hidden">
 <img id="logo-game" src="logo.png" alt="Logo"/>
-<div id="game-title">0-4 單字聽打測驗</div>
+<div id="game-title">0-6 單字聽打測驗</div>
 <div id="question-number"></div>
 <div id="timer" style="font-size:18px; color:red; margin-bottom:15px;"></div>
 <audio id="audio" controls></audio>
@@ -55,18 +55,17 @@ if (password !== "1231") { alert("密碼錯誤，無法進入！"); window.locat
 
 <script>
 const questions = [
-  { audio: "000401W.mp3", answer: "가루", chinese: "粉" },
-  { audio: "000402W.mp3", answer: "고모", chinese: "姑姑" },
-  { audio: "000403W.mp3", answer: "요가", chinese: "瑜珈" },
-  { audio: "000404W.mp3", answer: "고구마", chinese: "地瓜" },
-  { audio: "000405W.mp3", answer: "카드", chinese: "卡片" },
-  { audio: "000406W.mp3", answer: "마이크", chinese: "麥克風" },
-  { audio: "000407W.mp3", answer: "쿠키", chinese: "餅乾" },
-  { audio: "000408W.mp3", answer: "코", chinese: "鼻子" },
-  { audio: "000409W.mp3", answer: "꼬리", chinese: "尾巴" },
-  { audio: "000410W.mp3", answer: "두꺼비", chinese: "癩蛤蟆" },
-  { audio: "000411W.mp3", answer: "코끼리", chinese: "大象" },
-  { audio: "000412W.mp3", answer: "꼬마", chinese: "小不點" }
+  { audio: "000601W.mp3", answer: "부모", chinese: "父母" },
+  { audio: "000602W.mp3", answer: "유부", chinese: "油豆腐" },
+  { audio: "000603W.mp3", answer: "바다", chinese: "海" },
+  { audio: "000604W.mp3", answer: "여보", chinese: "親愛的" },
+  { audio: "000605W.mp3", answer: "파리", chinese: "蒼蠅" },
+  { audio: "000606W.mp3", answer: "아파트", chinese: "公寓" },
+  { audio: "000607W.mp3", answer: "포도", chinese: "葡萄" },
+  { audio: "000608W.mp3", answer: "피부", chinese: "皮膚" },
+  { audio: "000609W.mp3", answer: "아빠", chinese: "爸爸" },
+  { audio: "000610W.mp3", answer: "뿌리", chinese: "根" },
+  { audio: "000611W.mp3", answer: "뽀뽀", chinese: "親親" }
 ];
 
 const modeSelectDiv = document.getElementById("mode-select");
